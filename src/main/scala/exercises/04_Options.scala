@@ -15,7 +15,7 @@ import sys.error
  * 		https://github.com/scala-labs/scala-labs/blob/master/labs/src/main/scala/org/scalalabs/basic/lab03/OptionExercise.scala
  */
 
-object Options {
+object Options{
   /**
    * This map contains sample testdata to clarify this exercise.
    * It contains key value pairs where:
@@ -25,7 +25,7 @@ object Options {
    * -- the room is not available (Some("locked"))
    */
   val rooms = Map(1 -> Some("12"), 2 -> None, 3 -> Some("locked"), 4 -> Some("14"), 5 -> Some("8"), 6 -> Some("locked"))
-  
+
   /**
    * Implement the room state method that should return the state of a room as a String as follows:
    * - filled: return total people:     E.g: Some("12") is "12"
@@ -34,7 +34,13 @@ object Options {
    * - does not exist: 					"not existing"
    */
   def roomState(rooms: Map[Int, Option[String]], room: Int): String = {
-    error("Fix me")
+    val roomVal = rooms.get(room)
+      roomVal match {
+        case Some(Some("locked")) => "not available" 
+        case Some(Some(occupantsNumber)) => occupantsNumber
+        case Some(None) => "empty"
+        case None => "not existing"
+    }
   }
 
   /**
@@ -44,6 +50,14 @@ object Options {
    * to convert a possible numeric String (e.g. Some("12")) to an integer
    */
   def totalPeopleInRooms(rooms: Map[Int, Option[String]]): Int = {
-    error("Fix me")
+    rooms.values.map(numberOfPeopleInRoom).foldLeft(0)(_+_)
+  }
+
+  def numberOfPeopleInRoom( room: Option[String] ):Int = {
+    room match {
+      case Some("locked") => 0
+      case Some(occupantsNumber) => occupantsNumber.toInt
+      case _ => 0
+    }
   }
 }
