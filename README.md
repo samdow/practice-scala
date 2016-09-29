@@ -44,10 +44,10 @@ Here's what to do:
      - `WebScraper.scala`
   - [X] Review Ben's solutions (in a pull request)
   - [ ] Possibly review the [solutions from ScalaLabs](https://github.com/scala-labs/scala-labs/tree/master/solutions/src/main/scala/org/scalalabs/basic).
-  - [ ] Write about Scala in `scala-thoughts.md`
+  - [X] Write about Scala in `scala-thoughts.md`
 
 - Submit the assignment 
-  - [ ] Submit your work (by issuing a pull request).
+  - [X] Submit your work (by issuing a pull request).
   - [ ] Review and comment on other people's code. 
 
 ## Resources
