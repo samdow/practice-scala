@@ -24,12 +24,12 @@ start coding.**
 Here's what to do:
 
 - Get things set up
-  - [ ] Review the [Assignment workflow](https://github.com/hmc-cs111-fall2016/hmc-cs111-fall2016.github.io/wiki/Assignment-HOWTO), and follow it to get the materials for this lab.
-  - [ ] Read [Installing Scala](https://github.com/hmc-cs111-fall2016/hmc-cs111-fall2016.github.io/wiki/Installing-Scala), if you want to install Scala on your own machine.
+  - [X] Review the [Assignment workflow](https://github.com/hmc-cs111-fall2016/hmc-cs111-fall2016.github.io/wiki/Assignment-HOWTO), and follow it to get the materials for this lab.
+  - [X] Read [Installing Scala](https://github.com/hmc-cs111-fall2016/hmc-cs111-fall2016.github.io/wiki/Installing-Scala), if you want to install Scala on your own machine.
 
 - Work on the assignment
-  - [ ] Read the lab instructions, hints, and tips, below.
-  - [ ] Complete the exercises in the following files (found in the 
+  - [X] Read the lab instructions, hints, and tips, below.
+  - [X] Complete the exercises in the following files (found in the 
   `src/main/scala` directory):
      - `00_HelloWorld.scala`
      - `01_Echo.scala`
@@ -42,7 +42,7 @@ Here's what to do:
   - [ ] Possibly complete the optional exercises in the following files:
      - `Rainfall.scala`
      - `WebScraper.scala`
-  - [ ] Review Ben's solutions (in a pull request)
+  - [X] Review Ben's solutions (in a pull request)
   - [ ] Possibly review the [solutions from ScalaLabs](https://github.com/scala-labs/scala-labs/tree/master/solutions/src/main/scala/org/scalalabs/basic).
   - [ ] Write about Scala in `scala-thoughts.md`
 
